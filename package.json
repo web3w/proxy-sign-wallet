@@ -1,0 +1,27 @@
+{
+  "name": "element-orderbook-server",
+  "version": "2.3.5",
+  "main": "index.js",
+  "scripts": {
+    "sync-logs": "WYVERN_SYNC_LOGS=1 node index.js",
+    "server": "node index.js",
+    "sync-orderbook": "WYVERN_SYNC_ORDERBOOK=1 node index.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bunyan": "^1.8.12",
+    "element-js": "https://github.com/definancer/element-js.git#v2.3.5",
+    "ethereumjs-abi": "https://github.com/definancer/ethereumjs-abi.git",
+    "express": "^4.16.2",
+    "helmet": "^3.10.0",
+    "lru_map": "^0.3.3",
+    "mysql2": "^2.2.5",
+    "node-fetch": "^2.6.1",
+    "sequelize": "^4.31.2",
+    "web3": "^1.3.5"
+  },
+  "devDependencies": {
+    "supertest": "^6.1.3"
+  }
+}
